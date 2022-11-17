@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Record</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    
+        <style type="text/css">
+        .wrapper{
+            width: 500px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="page-header">
+                        <h2>Workout Planner</h2>
+                    </div>
+                    <p>Please fill this form and submit to add get a personalized workout plan.</p>
+                    <form action="workout.php" method="post">
+                        <div class="form-group">
+                            <label>Muscle Group</label>
+                            <select name="Workout" id="Workout">
+							  <option valueWorkout="Lower Body">Lower Body</option>
+							  <option valueWorkout="Upper Body">Upper Body</option>
+							  <option valueWorkout="Full Body">Full Body</option>
+							</select>
+                        </div>
+                        <div class="form-group">
+                            <label>Workout</label>
+                            <select name="Workout" id="Workout">
+							  <option valueWorkout="Lower Body">Lower Body</option>
+							  <option valueWorkout="Upper Body">Upper Body</option>
+							  <option valueWorkout="Full Body">Full Body</option>
+							</select>
+                        </div>
+                        <div class="form-group">
+                            <label>BMI</label>
+                            <select name="BMI" id="BMI">
+							  <option value="18">12-18</option>
+							  <option value="24">18-24</option>
+							  <option value="29">25-29</option>
+							  <option value="42">30-42</option>
+							</select>
+                        </div>
+                        <div class="form-group">
+                            <label>Expertice</label>
+							<select name="Difficulty" id="Difficulty">
+							  <option value="Beginner">Beginner</option>
+							  <option value="Intermediate">Intermediate</option>
+							  <option value="Advanced">Advanced</option>
+							</select>
+                        </div>
+                        <input type="submit" class="btn btn-primary" name="submit" value="Submit">
+                    </form>
+                </div>
+            </div>        
+        </div>
+    </div>
+</body>
+</html>
